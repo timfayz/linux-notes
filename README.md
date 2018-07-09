@@ -3,17 +3,16 @@
 ## Coding pages
 
 Main definitions
-* `character` - the smallest *element* of writing that has a meaning. It can be letter, spacing character, symbol or even a word (eg. `a`, `b`, `|`, `$`, etc)
-* `character set` - just a *collection or table* of that characters (sometimes synonym for *code page*). However, character sets can be collections without a method of (en)coding them. Similarly code pages could contain multiple sets of characters.
-* `code page` - a *table* where each character (of any of its character set) has been assigned a number
-* `code point` - a *numerical value* assigned to a character that makes up a *code space*
-* `glyph` - graphical representation of a character. Character can be one but has several glyphs
+* `character` - the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. Examples: `a`, `b`, `|`, `$`, etc.
+* `character set` - just a *collection* or table of that characters (sometimes synonym for *code page*). However, character sets can be collections without a method of (en)coding them. Similarly code pages could contain multiple sets of characters.
+* `code page` or `coded character sets` - a *table* where each character (of any of its character set) has been assigned a number. Examples: Unicode (UCS), ASCII, KOI8, ISO 8859 (Latin-1), Windows-1252 (CP-1252), etc
+* `code point` - a *unique number* assigned to a character that makes up a *code space*
+* `glyph` - graphical representation of a character. Character can be one but has several glyphs. Examples: Α, *Α*, **Α**
 ```
 [            256-65536] - ISO 10646, UCS, Universal Character Set or just Unicode (16/32bit)
-[     128-255]          - ISO 8859-1, KOI8(R/U) (8bit)
+[     128-255]          - ISO 8859-1, CP-1252, KOI8 (8bit)
 [0-127]                 - US-ASCII or just "classic" ASCII (7bit)
-First 0-65536(0xFFFF) code points are "basic multilingual plane" (BMP), 
-all other are "supplementary characters"
+First 0-65536(0xFFFF) code points of Unicode are "basic multilingual plane" (BMP), all other are "supplementary characters"
 ```
 
 ## First approximation (basic)
