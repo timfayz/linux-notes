@@ -3,12 +3,19 @@
 ## What every programmer should know about symbols displayed on screen
 
 ### Main definitions
-* `Character` - the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. Examples: A B | + $ etc.
-* `Character Set` (or `charset`) - just a *collection* of that characters (sometimes mistakenly referenced with *Code Page*; they are related but not the same). One charset might be used by multiple languages. For example latin letters are used in various European languages. Most of charsets are generally formed naturally. As a rule Character Sets are collections without a method of *Encoding* them. On the contrary, Code Pages could contain multiple charsets with one method of Encoding. Examples: Unicode, natural language alphabets, greek numbers, etc.
-* `Code Page` (or `coded character sets`) - a *table* where each Character (of any of its charsets) has been assigned a unique number. Think of Code Pages being similar to a table of characters to conventional (human readable) number and Encodings being how a Character encoded to (machine readable) byte form. Examples: Unicode (UCS), ASCII, KOI8, ISO 8859 (Latin-1), Windows-1252 (CP-1252), etc.
-* `Encoding` -  a *mapping* between a Character Set and a (usually byte-based) technical representation of the characters. Often used interchangeably with the Code Page term which is good way to go. 
-* `Code Point` - a *unique number* assigned to a Character that makes up a *Code Space* of Character Set.
-* `Glyph` - *graphical representation* of a Character. Character can be one but to has several glyphs. Examples: Α, *Α*, **Α**.
+* `Character` - is the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. 
+Examples: A B | + $ etc.
+
+* `Character Set` (or `charset`) - is just a *collection* of that characters (sometimes mistakenly referenced with *Code Page*; they are related but not the same). One charset might be used by multiple languages. For example latin letters are used in various European languages. Most of charsets are generally formed naturally. As a rule Character Sets are collections without a method of *Encoding* them. On the contrary, Code Pages could contain multiple charsets with one method of Encoding. Examples: Unicode, natural language alphabets, greek numbers, etc.
+
+* `Code Page` (or `coded character sets`) - a *table* or *mapping* where each Character (of any of its charsets) has been assigned a unique number. Think of Code Pages being similar to a table of characters to conventional (human readable) number and Encodings being how a Character encoded to (machine readable) byte form. 
+Examples: Unicode (UCS), ASCII, KOI8, ISO 8859 (Latin-1), Windows-1252 (CP-1252), etc.
+
+* `Encoding` -  is *how* that mapping between a Character Set and (usually byte-based) technical representation of its character is done. Often used interchangeably with the Code Page term. However, Encoding has more general sense and might include the latter. 
+
+* `Code Point` - is a *unique number* assigned to a Character that makes up a *Code Space* of Character Set.
+
+* `Glyph` - *graphical representation* of a Character. Character can be one but has several glyphs. Examples: Α, *Α*, **Α**.
 
 ### Byte representation
 ```
