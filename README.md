@@ -17,6 +17,11 @@ Examples: Unicode (UCS), ASCII, KOI8, ISO 8859 (Latin-1), Windows-1252 (CP-1252)
 
 * `Glyph` - *graphical representation* of a Character. Character can be one but has several glyphs. Examples: Α, *Α*, **Α**.
 
+References:
+1. https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/
+1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
+1. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
+
 ### Byte representation
 ```
 [            256-65536] - ISO 10646, UCS, Universal Character Set or just Unicode (16/32bit)
