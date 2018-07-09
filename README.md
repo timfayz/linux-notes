@@ -1,6 +1,6 @@
 # linux-notes
 
-## Coding pages
+## What every programmer should know about symbols displayed on screen
 
 ### Main definitions
 * `Character` - the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. Examples: A B | + $ etc.
