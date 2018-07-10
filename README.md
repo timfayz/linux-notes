@@ -4,15 +4,26 @@
 
 ### Keyboard handling
 Roughly speaking, the picture is this: the keyboard produces scancodes, the scancodes are assembled into keycodes (one unique code for each key), and keycodes are converted to tty input characters using the kernel keymaps. After that, the normal `stty` processing takes place, just as for any other terminal.
+
+In a Linux console, keycodes are mapped to escape sequences according to the console keymap.
 ```
 Keyboard (3 types of scancodes) --[scancode]--> Motherboard --> 
-CPU --> Interrup --> Linux kernel (ioctl) --[keycode]--> Console driver -->  
+CPU --[interrup]--> Linux kernel (ioctl) --[keycode]-->
+  Console driver --[escape sequence]--> Shell  
+  X Server --[keysyms+modifiers]--> Application
 ```
 
-#### Toolbox
+#### Programs (to manage runtime)
 * `setkeycodes`
+* `loadkeys`
+* `showconsolefont`
+* `showkey`
 
-### Main definitions
+#### Files (to configure)
+* `/dev/input/event*`
+
+
+### Characters and Encoding
 * `Character` - is the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. 
 Examples: A B | + $ etc.
 
@@ -27,12 +38,17 @@ Examples: Unicode (UCS), language alphabets, greek numbers, etc.
 
 * `Glyph` - is a *graphical representation* of a Character. Character can be one but has several glyphs. Examples: Α, *Α*, **Α**.
 
+### Fonts and rendering
+
+#### Programs
+
+
 References:
 1. https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/
 1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
 1. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
 
-#### Toolbox
+#### Programs
 * `iconv`
 
 ### Byte representation
