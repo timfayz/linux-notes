@@ -2,6 +2,13 @@
 
 ## What every programmer should know about symbols displayed on screen
 
+### Keyboard handling
+Roughly speaking, the picture is this: the keyboard produces scancodes, the scancodes are assembled into keycodes (one unique code for each key), and keycodes are converted to tty input characters using the kernel keymaps. After that, the normal `stty` processing takes place, just as for any other terminal.
+```
+Keyboard (3 types of scancodes) --[scancode]--> Motherboard --> 
+CPU --> Interrup --> Linux kernel (ioctl) --[keycode]--> Console driver -->  
+```
+
 ### Main definitions
 * `Character` - is the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. 
 Examples: A B | + $ etc.
