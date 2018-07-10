@@ -9,6 +9,9 @@ Keyboard (3 types of scancodes) --[scancode]--> Motherboard -->
 CPU --> Interrup --> Linux kernel (ioctl) --[keycode]--> Console driver -->  
 ```
 
+#### Toolbox
+* `setkeycodes`
+
 ### Main definitions
 * `Character` - is the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. 
 Examples: A B | + $ etc.
@@ -28,6 +31,9 @@ References:
 1. https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/
 1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
 1. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
+
+#### Toolbox
+* `iconv`
 
 ### Byte representation
 ```
