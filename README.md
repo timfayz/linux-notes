@@ -13,13 +13,13 @@ CPU --[interrup]--> Linux kernel (ioctl) --[keycode]-->
   X Server --[keysyms+modifiers]--> Application
 ```
 
-#### Programs (to manage runtime)
+#### PROGS (to manage runtime)
 * `setkeycodes`
 * `loadkeys`
 * `showconsolefont`
 * `showkey`
 
-#### Files (to configure)
+#### FILES (to configure)
 * `/dev/input/event*`
 
 
@@ -38,18 +38,17 @@ Examples: Unicode (UCS), language alphabets, greek numbers, etc.
 
 * `Glyph` - is a *graphical representation* of a Character. Character can be one but has several glyphs. Examples: Α, *Α*, **Α**.
 
-### Fonts and rendering
-
-#### Programs
-
-
 References:
 1. https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/
 1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
 1. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
 
-#### Programs
+#### PROGS
 * `iconv`
+
+#### FILES
+
+### Fonts and rendering
 
 ### Byte representation
 ```
