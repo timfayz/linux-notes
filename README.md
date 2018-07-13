@@ -1,8 +1,8 @@
 # linux-notes
 
-## What every programmer should know about symbols displayed on screen
+## Basic conception
 
-### Keyboard handling
+## Keyboard handling
 Roughly speaking, the picture is this: the keyboard produces scancodes, the scancodes are assembled into keycodes (one unique code for each key), and keycodes are converted to tty input characters using the kernel keymaps. After that, the normal `stty` processing takes place, just as for any other terminal.
 
 In a Linux console, keycodes are mapped to escape sequences according to the console keymap.
@@ -15,13 +15,12 @@ CPU --[interrup]--> Linux kernel (ioctl) --[keycode]-->
   Console driver --[escape sequence]--> Shell  
   X Server --[keysyms+modifiers]--> Application
 ```
-#### Reference
-[1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
-
 ```
+[INPUT]
 +----------+              +-------------+         +-----+
 | keyboard |------------->| motherboard |-------->| CPU |
 +----------+              +-------------+         +-----+
+(3 types of scancodes)
              USB, PS/2, …                 PCI, …
              key down/up
 
@@ -30,7 +29,19 @@ CPU --[interrup]--> Linux kernel (ioctl) --[keycode]-->
          +--------+        +----------+          +-------------+
 interrupt          scancode             keysym
                    =keycode            +modifiers
+OR
+         +--------+         +----------------+          +-------+
+-------->| kernel |-------->| console driver |--------->| shell |
+         +--------+         +----------------+          +-------+
+interrupt (ioctl)   keycode                   escape 
+                                              sequence
+
+[OUTPUT]
 ```
+#### Reference
+[1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
+
+
 
 #### PROGS (to manage runtime)
 * `setkeycodes`
@@ -57,6 +68,13 @@ Examples: Unicode (UCS), language alphabets, greek numbers, etc.
 
 * `Glyph` - is a *graphical representation* of a Character. Character can be one but has several glyphs. Examples: Α, *Α*, **Α**.
 
+```
+[            256-65536] - ISO 10646, UCS, Universal Character Set or just Unicode (16/32bit)
+[     128-255]          - ISO 8859-1, CP-1252, KOI8 (8bit)
+[0-127]                 - US-ASCII or just "classic" ASCII (7bit)
+First 0-65536(0xFFFF) code points of Unicode are "basic multilingual plane" (BMP), all other are "supplementary characters"
+```
+
 References:
 1. https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/
 1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
@@ -68,14 +86,6 @@ References:
 #### FILES
 
 ### Fonts and rendering
-
-### Byte representation
-```
-[            256-65536] - ISO 10646, UCS, Universal Character Set or just Unicode (16/32bit)
-[     128-255]          - ISO 8859-1, CP-1252, KOI8 (8bit)
-[0-127]                 - US-ASCII or just "classic" ASCII (7bit)
-First 0-65536(0xFFFF) code points of Unicode are "basic multilingual plane" (BMP), all other are "supplementary characters"
-```
 
 ## First approximation (basic)
 ```
@@ -170,6 +180,7 @@ Future [Table Of Content](url)
 * Theory
     * PC Boot Process
     * Linux Boot Process
+    * What every programmer should know about symbols displayed on screen
     * Linux organization & management
     * Scripting
     ...
