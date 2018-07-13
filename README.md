@@ -4,9 +4,11 @@ This is how I become aweare of what's going on in Linux
 ### Table Of Content
 * [Prepare Linux](https://github.com/timfayz/simply-linux) <br>
 Bootstraping yourself. Get hands dirty. Before extending the system - become part of or get used to it. 
-* [PC Boot Process](pages/pc-boot.md)  
+* [PC Boot Process](pages/pc-boot.md)
+* [Linux Internals]
+    * [pages/doc.md1]()
+    * [pages/doc.md2]()
 * Write & Run "Hello world"
-* What every programmer should know about symbols displayed on screen
 * Linux organization & management
 * Scripting
 ...
@@ -15,6 +17,7 @@ Bootstraping yourself. Get hands dirty. Before extending the system - become par
 
 
 ## Unsroted
+* What every programmer should know about symbols displayed on screen
 ```
 (kernel space)
 [syslinux/grub] -> [vmlinuz] -> [initramfs] -> [runit] ->
