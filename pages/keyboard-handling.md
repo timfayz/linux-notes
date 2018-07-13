@@ -29,3 +29,14 @@ interrupt (ioctl)   keycode                   escape
 [OUTPUT]
 ```
 
+#### References
+[1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
+
+#### Tools (runtime management)
+* `setkeycodes`
+* `loadkeys`
+* `showconsolefont`
+* `showkey`
+
+#### Files (persistent configuration)
+* `/dev/input/event*`
