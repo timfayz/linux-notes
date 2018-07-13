@@ -1,9 +1,12 @@
 # linux-notes
 
+
 ## Basic conception
 * `access` - in order to change something you an access.
 * `configuration` - you want your setup to persist in time on each boot.
 * `session` - you want several typical layouts to work with something.
+* `runtime`
+
 
 
 ## Keyboard handling
@@ -13,12 +16,6 @@ In a Linux console, keycodes are mapped to escape sequences according to the con
 
 The mapping uses two levels of indirection, from keycode+modifier combination (with three modifiers: shift, control, alt) to keysym and from keysym to string (character or escape sequence). The set of keysyms is fixed, so if you want to define custom combinations you'll need to use existing keysyms that aren't otherwise used such as F13, F14, …
  
-```
-Keyboard (3 types of scancodes) --[scancode]--> Motherboard --> 
-CPU --[interrup]--> Linux kernel (ioctl) --[keycode]-->
-  Console driver --[escape sequence]--> Shell  
-  X Server --[keysyms+modifiers]--> Application
-```
 ```
 [INPUT]
 +----------+              +-------------+         +-----+
@@ -42,19 +39,19 @@ interrupt (ioctl)   keycode                   escape
 
 [OUTPUT]
 ```
-#### Reference
+
+#### References
 [1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
 
-
-
-#### PROGS (to manage runtime)
+#### Tools (runtime management)
 * `setkeycodes`
 * `loadkeys`
 * `showconsolefont`
 * `showkey`
 
-#### FILES (to configure)
+#### Files (persistent configuration)
 * `/dev/input/event*`
+
 
 
 ## Characters and Encoding
@@ -84,12 +81,16 @@ References:
 1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
 1. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
 
-#### PROGS
+#### Programs
 * `iconv`
 
-#### FILES
+#### Files
+
+
 
 ## Fonts and rendering
+
+
 
 ## Unsroted
 ```
@@ -104,6 +105,8 @@ or
 
 sudo chsh -s /usr/bin/tmux $USER
 ```
+
+
 
 ## Useful tools
 ```
