@@ -1,6 +1,10 @@
 # linux-notes
 
 ## Basic conception
+* `access` - in order to change something you an access.
+* `configuration` - you want your setup to persist in time on each boot.
+* `session` - you want several typical layouts to work with something.
+
 
 ## Keyboard handling
 Roughly speaking, the picture is this: the keyboard produces scancodes, the scancodes are assembled into keycodes (one unique code for each key), and keycodes are converted to tty input characters using the kernel keymaps. After that, the normal `stty` processing takes place, just as for any other terminal.
@@ -53,7 +57,7 @@ interrupt (ioctl)   keycode                   escape
 * `/dev/input/event*`
 
 
-### Characters and Encoding
+## Characters and Encoding
 * `Character` - is the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. 
 Examples: A B | + $ etc.
 
@@ -85,17 +89,7 @@ References:
 
 #### FILES
 
-### Fonts and rendering
-
-## First approximation (basic)
-```
-/boot
-/dev
-/etc
-/sys
-/proc
-/usr
-```
+## Fonts and rendering
 
 ## Unsroted
 ```
