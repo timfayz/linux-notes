@@ -1,4 +1,4 @@
-# Booting process
+# PC boot
 This document describes how typical Linux system boots on PC. It mostly concerns by which order programs start (process tree) and what the files are either created, read or removed during this boot. It is an attempt to make an overall picture how Linux started on process+data level with no cognitive pain :) I assume the only two things - you occasionally stumbled upon running Linux system with either GUI/Desktop environment or just CLI; and you know basics of comand line interface.
 
 ## Second approximation (advanced)
