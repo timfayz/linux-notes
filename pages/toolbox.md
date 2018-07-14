@@ -1,7 +1,8 @@
 # Toolbox
 ```
 ### Documentation and help
-whatis X
+whatis [program] // list pages
+man [-number] [program]
 
 ### General system management
 pstree
