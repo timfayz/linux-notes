@@ -1,5 +1,8 @@
 # Toolbox
 ```
+### Documentation and help
+whatis X
+
 ### General system management
 pstree
 top/htop
@@ -13,10 +16,15 @@ blkid
 
 ### File management
 ls
-find
+mkdir
 cp/scp/rsync
 chown
 chmod
+
+### Search and location
+which X
+locate
+find
 
 ### File system management
 mount
@@ -31,3 +39,7 @@ usermod
 
 ### Run programs
 exec
+chpst
+
+### Remote access
+ssh
