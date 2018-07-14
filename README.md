@@ -3,7 +3,9 @@ This is how I become aweare of what's going on in Linux
 
 ### Table Of Content
 * [Prepare Linux](https://github.com/timfayz/simply-linux) <br>
-Bootstraping yourself. Get hands dirty. Before extending the system - become part of or get used to it. 
+Get hands dirty. Bootstraping yourself. Before extending the system become good user of it.
+    * Search and location
+    * Documentation and help
 * [PC Boot Process](pages/pc-boot.md) <br>
 Understand how your PC booting up whatever regardless of the OS.
 * Linux Internals <br>
@@ -35,16 +37,4 @@ or
 [agetty*] -> [login] -> [sh]
 
 sudo chsh -s /usr/bin/tmux $USER
-```
-chpst
-
-### Search and location
-which X
-
-### Documentation and help
-whatis X
-
-### Password management
-### Remote access
-ssh
 ```
