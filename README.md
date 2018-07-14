@@ -22,7 +22,7 @@ Organization & management
 ## Unsroted
 * [Toolbox](pages/toolbox.md)
 * [Template](pages/template.md)
-* [Linux conventions](pages/conventions.md)
+* [Linux conventions](pages/linux-conventions.md)
 * What every programmer should know about symbols displayed on screen
 ```
 (kernel space)
