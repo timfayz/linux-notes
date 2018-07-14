@@ -20,6 +20,7 @@ Organization & management
 
 
 ## Unsroted
+* [Toolbox](pages/toolbox.md)
 * What every programmer should know about symbols displayed on screen
 ```
 (kernel space)
@@ -33,40 +34,6 @@ or
 
 sudo chsh -s /usr/bin/tmux $USER
 ```
-
-**Useful tools**
-```
-### General system management
-pstree
-top/htop
-dmesg
-log
-
-### Device management
-udev
-lsblk
-blkid
-
-### File management
-ls
-find
-cp/scp/rsync
-chown
-chmod
-
-### File system management
-mount
-mkfs.*
-
-### User management
-id
-groups
-passwd
-useradd
-usermod
-
-### Run programs
-exec
 chpst
 
 ### Search and location
@@ -79,4 +46,3 @@ whatis X
 ### Remote access
 ssh
 ```
-
