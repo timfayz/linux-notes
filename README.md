@@ -4,12 +4,15 @@ This is how I become aweare of what's going on in Linux
 ### Table Of Content
 * [Prepare Linux](https://github.com/timfayz/simply-linux) <br>
 Bootstraping yourself. Get hands dirty. Before extending the system - become part of or get used to it. 
-* [PC Boot Process](pages/pc-boot.md)
-* [Linux Internals]
-    * [pages/doc.md1]()
-    * [pages/doc.md2]()
+* [PC Boot Process](pages/pc-boot.md) <br>
+Understand how your PC booting up whatever regardless of the OS.
+* Linux Internals <br>
+Organization & management
+    * [Basic concepts](pages/basic-concepts.md)
+    * [Characters and encodings](pages/charset-encoding.md)
+    * [Font rendering](pages/font-rendering.md)
+    * [Keyboard handling](pages/keyboard-handling.md)
 * Write & Run "Hello world"
-* Linux organization & management
 * Scripting
 ...
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
