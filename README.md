@@ -7,7 +7,7 @@ Get hands dirty. Bootstraping yourself. Before extending the system become good 
     * Search and location
     * Documentation and help
 * [PC Boot Process](pages/pc-boot.md) <br>
-Understand how your PC booting up whatever regardless of the OS.
+Understand how your PC booting up regardless of the OS you use.
 * Linux Internals <br>
 Organization & management
     * [Basic concepts](pages/basic-concepts.md)
