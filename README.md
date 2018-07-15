@@ -1,4 +1,4 @@
-# linux-notes
+# Linux Notes
 This is how I become aweare of what's going on in Linux
 
 ### Table Of Content
