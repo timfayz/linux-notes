@@ -1,5 +1,5 @@
 # Linux Notes
-This is how I become aweare of what's going on in Linux
+This is how I become aweare of what's going on in the Linux
 
 ### Table Of Content
 * [Prepare Linux](https://github.com/timfayz/simply-linux) <br>
