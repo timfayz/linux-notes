@@ -19,7 +19,14 @@ Organization & management
 ...
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
 
+### Little TODO
+* move pages/ to docs/
 
+### Definition of being able to manage
+*state* - eg. path to fonts, program can run
+* Check the state
+* Alternate the state
+* (repeat)
 
 ## Unsroted
 * [Toolbox](pages/toolbox.md)
