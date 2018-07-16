@@ -40,6 +40,15 @@ There are two ways to display a character.
 * Server-side rendering: the application tells the X server “draw this string in this font at this position”. The font resides on the X server.
 * Client-side rendering: the application builds an image that represents the character in a font that it chooses, then tells the X server to display that image.
 
+#### Programs
+* `xset q` - show current X11 properties
+
+#### Files
+```
+% cd /usr/local/share/lib/X11/fonts
+% cat fonts.alias
+```
+
 ### Console
 In a Linux console, keycodes are mapped to escape sequences according to the console keymap.
 
