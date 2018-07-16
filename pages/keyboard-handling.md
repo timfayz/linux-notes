@@ -78,6 +78,8 @@ In Linux, several devices can be used as system console: a virtual terminal, ser
 * [1] (MOVE TO FONT SECTION) https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
 * https://stackoverflow.com/questions/17078247/linux-c-xft-how-to-use-it/17176477#17176477
 * https://unix.stackexchange.com/questions/7461/how-does-linux-manage-fonts/7483#7483
+* https://unix.stackexchange.com/questions/12510/relationship-of-keyboard-layout-and-xmodmap/12518#12518
+* https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
 
 #### Tools (runtime management)
 * `setkeycodes`
