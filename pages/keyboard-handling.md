@@ -40,6 +40,8 @@ There are two ways to display a character.
 * Server-side rendering: the application tells the X server “draw this string in this font at this position”. The font resides on the X server.
 * Client-side rendering: the application builds an image that represents the character in a font that it chooses, then tells the X server to display that image.
 
+Fontconfig is a library designed to provide a list of available fonts to applications, and also for configuration for how fonts get rendered. The FreeType library `freetype2` renders the fonts, based on this configuration. 
+
 #### Programs
 * `Xft, freetype2, fontcofig`
 * `xset q` shows current X11 properties
@@ -52,6 +54,8 @@ There are two ways to display a character.
 In a Linux console, keycodes are mapped to escape sequences according to the console keymap.
 
 As for the Linux console, it has its own keyboard layouts which are stored in /usr/share/keymaps and loaded with the loadkeys command. When in the BIOS and earlier boot loader stages, including GRUB2, the keyboard mapping is whatever the number the BIOS decides to map the key to.
+
+In Linux, several devices can be used as system console: a virtual terminal, serial port, USB serial port, VGA in text-mode, framebuffer.
 
 #### Programs
 * `setfont`
