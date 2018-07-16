@@ -23,10 +23,31 @@ Organization & management
 * move pages/ to docs/
 
 ### Definition of being able to manage
-*state* - eg. path to fonts, program can run
-* Check the state
-* Alternate the state
-* (repeat)
+**manage** Linux program means _know how to_:
+* show its location
+* show its permissions, user, group
+* change its state during 
+    * **first boot** (using configuration)
+    * **runtime** (using command line or reloading configs)
+    * **compile time** (by recompilation)
+* list its dependecies (ldd)
+* list network ports it uses
+* list systemcalls it calls
+* measure performance (profiling) 
+* show the platform it was compiled against
+* use it (flags & options) under CLI
+* show how much memory and CPU it utilize
+* read it man page
+
+Main questions:
+1. Which programs manage smthg?
+1. Where they are stored?
+1. Where their configs are stored?
+1. How to change them?
+1. How to check the changes?
+1. (if defaults hardcoded) Can I recompile program to change its defaults?
+1. (if nothing found) What the syscalls/libraries it uses?
+1. Can I write my own program to do what I want?
 
 ## Unsroted
 * [Toolbox](pages/toolbox.md)
