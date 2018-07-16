@@ -37,7 +37,7 @@ Organization & management
 * show the platform it was compiled against
 * use it (flags & options) under CLI
 * show how much memory and CPU it utilize
-* read it man page
+* find it man page, docs, reference, etc
 
 Main questions:
 1. Which programs manage smthg?
