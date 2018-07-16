@@ -3,7 +3,7 @@ Roughly speaking, the picture is this: the keyboard produces scancodes, the scan
 
 The mapping uses two levels of indirection, from keycode+modifier combination (with three modifiers: shift, control, alt) to keysym and from keysym to string (character or escape sequence). The set of keysyms is fixed, so if you want to define custom combinations you'll need to use existing keysyms that aren't otherwise used such as F13, F14, …
 
-### X Server
+### X Window System
 The X server reads input events through a device file, for example `/dev/input/eventNN`
 
 SPLIT X11 PLAIN LINUX CONSOLE (DO NOT MESS!)
@@ -41,17 +41,25 @@ There are two ways to display a character.
 * Client-side rendering: the application builds an image that represents the character in a font that it chooses, then tells the X server to display that image.
 
 #### Programs
-* `xset q` - show current X11 properties
-* `mkfontdir` - generate font index storing aliases into `font.alias` (bitmap) and `font.scale` (vector)
+* `Xft, freetype2, fontcofig`
+* `xset q` shows current X11 properties
+* `mkfontdir` generates font index storing aliases into `font.alias` (bitmap) and `font.scale` (vector)
 
 #### Files
 * `/usr/share/fonts/*/fonts.{alias,scale}`
 
-### Console
+### Linux Console
 In a Linux console, keycodes are mapped to escape sequences according to the console keymap.
 
 As for the Linux console, it has its own keyboard layouts which are stored in /usr/share/keymaps and loaded with the loadkeys command. When in the BIOS and earlier boot loader stages, including GRUB2, the keyboard mapping is whatever the number the BIOS decides to map the key to.
 
+#### Programs
+* `setfont`
+* `showconsolefont`
+#### Files
+`/usr/share/kbd/consolefonts` is the default font directory.
+`/usr/share/kbd/unimaps` is the default directory for Unicode maps.
+`/usr/share/kbd/consoletrans` is the default directory for screen mappings.  The default font is a file `default*.psfu.gz`
 
 #### References
 [1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
