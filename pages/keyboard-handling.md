@@ -6,6 +6,12 @@ The mapping uses two levels of indirection, from keycode+modifier combination (w
 ### X Window System
 The X server reads input events through a device file, for example `/dev/input/eventNN`
 
+In practice, you'll want to configure fonts in two ways:
+
+    For older-style programs: the font directories are listed via FontPath directives in xorg.conf and can be manipulated with xset fp commands by the user running X. If you install new fonts, you may need to run mkfontdir.
+    For newer-style programs, including all Gtk (Gnome, etc.) and Qt (KDE, etc.) programs: fonts are in the directories indicated by <dir> directives in /etc/fonts/fonts.conf, ~/.fonts.conf and a few other places. See the fontconfig documentation for more information. If you install new fonts, you may need to run fc-cache.
+
+
 SPLIT X11 PLAIN LINUX CONSOLE (DO NOT MESS!)
 ```
 [INPUT]
@@ -41,6 +47,7 @@ There are two ways to display a character.
 * Client-side rendering: the application builds an image that represents the character in a font that it chooses, then tells the X server to display that image.
 
 Fontconfig is a library designed to provide a list of available fonts to applications, and also for configuration for how fonts get rendered. The FreeType library `freetype2` renders the fonts, based on this configuration. 
+Though Fontconfig is the standard in modern Linux, some applications rely on the original method of font selection and display, the X Logical Font Description. 
 
 #### Programs
 * `Xft, freetype2, fontcofig`
@@ -66,9 +73,11 @@ In Linux, several devices can be used as system console: a virtual terminal, ser
 `/usr/share/kbd/consoletrans` is the default directory for screen mappings.  The default font is a file `default*.psfu.gz`
 
 #### References
-[1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
-[2] https://unix.stackexchange.com/questions/12510/relationship-of-keyboard-layout-and-xmodmap/12518#12518
-[1] (MOVE TO FONT SECTION) https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
+* [1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
+* [2] https://unix.stackexchange.com/questions/12510/relationship-of-keyboard-layout-and-xmodmap/12518#12518
+* [1] (MOVE TO FONT SECTION) https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
+* https://stackoverflow.com/questions/17078247/linux-c-xft-how-to-use-it/17176477#17176477
+* https://unix.stackexchange.com/questions/7461/how-does-linux-manage-fonts/7483#7483
 
 #### Tools (runtime management)
 * `setkeycodes`
