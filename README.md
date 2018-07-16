@@ -29,7 +29,7 @@ Organization & management
 * change its state during 
     * **first boot** (using configuration)
     * **runtime** (using command line or reloading configs)
-    * **compile time** (by recompilation)
+* build it from sources
 * list its dependecies (ldd)
 * list network ports it uses
 * list systemcalls it calls
