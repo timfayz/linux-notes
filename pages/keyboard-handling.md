@@ -42,12 +42,10 @@ There are two ways to display a character.
 
 #### Programs
 * `xset q` - show current X11 properties
+* `mkfontdir` - generate font index storing aliases into `font.alias` (bitmap) and `font.scale` (vector)
 
 #### Files
-```
-% cd /usr/local/share/lib/X11/fonts
-% cat fonts.alias
-```
+* `/usr/share/fonts/*/fonts.{alias,scale}`
 
 ### Console
 In a Linux console, keycodes are mapped to escape sequences according to the console keymap.
