@@ -8,8 +8,8 @@ The X server reads input events through a device file, for example `/dev/input/e
 
 In practice, you'll want to configure fonts in two ways:
 
-    For older-style programs: the font directories are listed via FontPath directives in xorg.conf and can be manipulated with xset fp commands by the user running X. If you install new fonts, you may need to run mkfontdir.
-    For newer-style programs, including all Gtk (Gnome, etc.) and Qt (KDE, etc.) programs: fonts are in the directories indicated by <dir> directives in /etc/fonts/fonts.conf, ~/.fonts.conf and a few other places. See the fontconfig documentation for more information. If you install new fonts, you may need to run fc-cache.
+* For older-style programs: the font directories are listed via FontPath directives in xorg.conf and can be manipulated with xset fp commands by the user running X. If you install new fonts, you may need to run mkfontdir.
+* For newer-style programs, including all Gtk (Gnome, etc.) and Qt (KDE, etc.) programs: fonts are in the directories indicated by <dir> directives in /etc/fonts/fonts.conf, ~/.fonts.conf and a few other places. See the fontconfig documentation for more information. If you install new fonts, you may need to run fc-cache.
 
 
 SPLIT X11 PLAIN LINUX CONSOLE (DO NOT MESS!)
