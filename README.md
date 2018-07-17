@@ -3,8 +3,6 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 
 ### Table Of Content
 * [Bootstrapping](https://github.com/timfayz/simply-linux) (get hands dirty)
-    * Search and location
-    * Documentation and help
 * [PC Boot Process](docs/pc-boot.md) (understanding how your PC booting up regardless of the OS)
 * Linux Internals (organization & management)
     * [Basic concepts](docs/basic-concepts.md)
@@ -33,30 +31,8 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 * show how much memory and CPU it utilize
 * find it man page, docs, reference, etc
 
-Main questions:
-1. Which programs manage smthg?
-1. Where they are stored?
-1. Where their configs are stored?
-1. How to change them?
-1. How to check the changes?
-1. (if defaults hardcoded) Can I recompile program to change its defaults?
-1. (if nothing found) What the syscalls/libraries it uses?
-1. Can I write my own program to do what I want?
-
 ## Unsroted
 * [Toolbox](docs/toolbox.md)
 * [Template](docs/template.md)
 * [Linux conventions](docs/linux-conventions.md)
 * What every programmer should know about symbols displayed on screen
-```
-(kernel space)
-[syslinux/grub] -> [vmlinuz] -> [initramfs] -> [runit] ->
-
-(user space)
-[login (/car/utmp,/etc/passwd)] -> [tmux [slstatus]]
--> [Xorg] -> [dwm] -> [st]
-or
-[agetty*] -> [login] -> [sh]
-
-sudo chsh -s /usr/bin/tmux $USER
-```
