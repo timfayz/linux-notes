@@ -2,19 +2,16 @@
 This is how I become aweare of what's going on in the Linux. This is kinda of framework to ask questions about the Linux *properly*.
 
 ### Table Of Content
-* [Bootstrapping](https://github.com/timfayz/simply-linux) <br>
-Get hands dirty. Bootstraping yourself. Before extending the system become good user of it.
+* [Bootstrapping](https://github.com/timfayz/simply-linux) (get hands dirty)
     * Search and location
     * Documentation and help
-* [PC Boot Process](pages/pc-boot.md) <br>
-Understand how your PC booting up regardless of the OS you use.
-* Linux Internals <br>
-Organization & management
+* [PC Boot Process](pages/pc-boot.md) (understanding how your PC booting up regardless of the OS)
+* Linux Internals (organization & management)
     * [Basic concepts](pages/basic-concepts.md)
     * [Characters and encodings](pages/charset-encoding.md)
     * [Font rendering](pages/font-rendering.md)
     * [Keyboard handling](pages/keyboard-handling.md)
-* Write & Run "Hello world"
+* Write & Run "Hello world" (become a super hero programmer)
 * Scripting
 ...
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
