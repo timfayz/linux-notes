@@ -1,8 +1,8 @@
 # Linux Notes
-This is how I become aweare of what's going on in the Linux
+This is how I become aweare of what's going on in the Linux. This is kinda of framework to ask questions about the Linux *properly*.
 
 ### Table Of Content
-* [Prepare Linux](https://github.com/timfayz/simply-linux) <br>
+* [Bootstrapping](https://github.com/timfayz/simply-linux) <br>
 Get hands dirty. Bootstraping yourself. Before extending the system become good user of it.
     * Search and location
     * Documentation and help
