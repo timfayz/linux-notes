@@ -5,19 +5,16 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 * [Bootstrapping](https://github.com/timfayz/simply-linux) (get hands dirty)
     * Search and location
     * Documentation and help
-* [PC Boot Process](pages/pc-boot.md) (understanding how your PC booting up regardless of the OS)
+* [PC Boot Process](docs/pc-boot.md) (understanding how your PC booting up regardless of the OS)
 * Linux Internals (organization & management)
-    * [Basic concepts](pages/basic-concepts.md)
-    * [Characters and encodings](pages/charset-encoding.md)
-    * [Font rendering](pages/font-rendering.md)
-    * [Keyboard handling](pages/keyboard-handling.md)
+    * [Basic concepts](docs/basic-concepts.md)
+    * [Characters and encodings](docs/charset-encoding.md)
+    * [Font rendering](docs/font-rendering.md)
+    * [Keyboard handling](docs/keyboard-handling.md)
 * Write & Run "Hello world" (become a super hero programmer)
 * Scripting
 ...
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
-
-### Little TODO
-* move pages/ to docs/
 
 ### Definition of being able to manage
 **manage** Linux program means _know how to_:
@@ -47,9 +44,9 @@ Main questions:
 1. Can I write my own program to do what I want?
 
 ## Unsroted
-* [Toolbox](pages/toolbox.md)
-* [Template](pages/template.md)
-* [Linux conventions](pages/linux-conventions.md)
+* [Toolbox](docs/toolbox.md)
+* [Template](docs/template.md)
+* [Linux conventions](docs/linux-conventions.md)
 * What every programmer should know about symbols displayed on screen
 ```
 (kernel space)
