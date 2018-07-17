@@ -38,16 +38,23 @@ interrupt (ioctl)   keycode                   escape
 +-------------+        +----------+          +-----+         +---------+
 | application |------->| X server |---····-->| GPU |-------->| monitor |
 +-------------+        +----------+          +-----+         +---------+
-               text or              varies          VGA, DVI,
+               chars or              varies          VGA, DVI,
                image                                HDMI, …
+               [2 ways]
 ```
-There are two ways to display a character.
+There are two ways to display a character:
 
 * Server-side rendering: the application tells the X server “draw this string in this font at this position”. The font resides on the X server.
 * Client-side rendering: the application builds an image that represents the character in a font that it chooses, then tells the X server to display that image.
 
 Fontconfig is a library designed to provide a list of available fonts to applications, and also for configuration for how fonts get rendered. The FreeType library `freetype2` renders the fonts, based on this configuration. 
 Though Fontconfig is the standard in modern Linux, some applications rely on the original method of font selection and display, the X Logical Font Description. 
+
+Both cairo and Xft respect fontconfig settings and use Freetype2 for glyph rendering and Xrender for compositing. So, when it comes to text rendering in X11, they both do the same thing, but with different drawing models and suitable for their respective APIs, of course. This is why the output of the xft and cairo backends in pango looks the same.
+
+EDIT: The following statements are part of my own research again, not in IRC.
+
+Also, Xft and Freetype2 are not strictly the same. Xft uses Freetype2 to provide text rendering for X11 (as does cairo), while Freetype2 is agnostic of any graphical environment (well, that one is kind of obvious in hindsight, if you look at the package dependencies).
 
 #### Programs
 * `Xft, freetype2, fontcofig`
@@ -80,6 +87,7 @@ In Linux, several devices can be used as system console: a virtual terminal, ser
 * https://unix.stackexchange.com/questions/7461/how-does-linux-manage-fonts/7483#7483
 * https://unix.stackexchange.com/questions/12510/relationship-of-keyboard-layout-and-xmodmap/12518#12518
 * https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
+* http://behdad.org/text/
 
 #### Tools (runtime management)
 * `setkeycodes`
