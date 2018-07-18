@@ -58,6 +58,8 @@ This document describes how typical Linux system boots under PC/ARM. It mostly c
 ## ARM
 *aliases: aarch64, armv6/7/8, rpi/2/3, beagleboard, odroid, etc.*
 
+https://raspberrypi.stackexchange.com/questions/8475/what-bios-does-raspberry-pi-use
+
 ```
 (kernel space)
 [syslinux/grub] -> [vmlinuz] -> [initramfs] -> [runit] ->
