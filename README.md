@@ -3,7 +3,7 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 
 ### Table Of Content
 * [Bootstrapping](https://github.com/timfayz/simply-linux) (get hands dirty)
-* [PC Boot Process](docs/pc-boot.md) (understanding how your PC booting up regardless of the OS)
+* [Boot Process](docs/pc-boot.md) (understanding how your PC/ARM is booting up)
 * Linux Internals (organization & management)
     * [Basic concepts](docs/basic-concepts.md)
     * [Characters and encodings](docs/charset-encoding.md)
@@ -35,4 +35,5 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 * [Toolbox](docs/toolbox.md)
 * [Template](docs/template.md)
 * [Linux conventions](docs/linux-conventions.md)
+* [Schematics format](docs/schematics.md)
 * What every programmer should know about symbols displayed on screen
