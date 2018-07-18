@@ -25,7 +25,7 @@
 
 ### Relations
 
-#### B/w 2 modules "in place"
+B/w two modules "in place"
 ```
 |module1|
 -[name]-    in both directions b/w 1 & 2
@@ -42,7 +42,7 @@
 |module2|
 ```
 
-#### B/w modules as reference
+B/w "referencing" modules
 ```
 |module1|
 ...
