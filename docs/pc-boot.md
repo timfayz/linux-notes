@@ -1,8 +1,32 @@
 # Device boot
 This document describes how typical Linux system boots under PC/ARM. It mostly concerns by which order programs start (process tree) and what the files are either created, read or removed during this boot.
 
-## PC (x86, x86_64, i386, amd64)
-This is how boot process is done under BIOS/UEFI firmwares. The are list of the most important things you need aware of.
+## Overview
+```
+(power on)
+
+0. |CPU| -> loads motherboard ROM firmware 
+
+1. |BIOS/UEFI| -> inits hardware, check itegrity, scan for available
+   mediums and load medium's MBR code according to "boot order"
+
+2. |MBR code| -> jumps to `bootloader`
+
+3. |bootloader| -> search and loads configurations
+
+4. |kernel| -> 
+
+5. |initramfs| -> 
+
+6. |init| -> 
+   (user space configuration)
+
+(login promt)
+```
+
+## PC
+*aliases: x86, x86_64, i386, amd64*
+This is how boot process is done under BIOS/UEFI firmwares.
 
 ### BIOS
 1. **Power on**
@@ -32,8 +56,6 @@ This is how boot process is done under BIOS/UEFI firmwares. The are list of the 
 
 \* *If Secure Boot is enabled, boot process verifies authenticity of EFI binary by signature at first.*
 
-4. a
-4. b
 ### BIOS/UEFI important notes
 * BIOS and UEFI are different types of ROM firmware
 * BIOS has no idea what is “partition”
