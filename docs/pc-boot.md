@@ -26,7 +26,6 @@ This document describes how typical Linux system boots under PC/ARM. It mostly c
 
 ## PC
 *aliases: x86, x86_64, i386, amd64* 1<br>
-This is how boot process is done under BIOS/UEFI firmwares.
 
 ### BIOS
 1. System switch on and power-on-self-test (POST)
