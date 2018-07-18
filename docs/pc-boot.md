@@ -1,4 +1,4 @@
-# Device boot
+# Boot process
 This document describes how typical Linux system boots under PC/ARM. It mostly concerns by which order programs start (process tree) and what the files are either created, read or removed during this boot. It is an attempt to make an overall picture how Linux started on process+data level with no cognitive pain :]
 
 ## Overview
