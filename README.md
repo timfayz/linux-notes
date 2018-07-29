@@ -13,6 +13,8 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 * Scripting
 ...
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
+* [Thoughts](docs/thoughts.md)
+* [FILES](docs/files.md)
 
 ### Definition of being able to manage
 **manage** Linux program means _know how to_:
