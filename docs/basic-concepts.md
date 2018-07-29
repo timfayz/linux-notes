@@ -10,6 +10,7 @@
 
 ## Shell history
 Thomson shell -> PWB shell -> Borne shell (sh). Next see:
+
 ![shell history tree](https://www.ibm.com/developerworks/library/l-linux-shells/figure1.gif)
 
 ## How shell works
