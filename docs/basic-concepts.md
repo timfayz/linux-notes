@@ -26,6 +26,7 @@ Then, BSD appeared to substitute all the legal restrictions. Designed under Berk
 * `unix-like system` - definition
 
 Finally, Linux appeared to put all dots on i as separate project. It's a kernel *only*. Self-contained systems are *distributions* in this context which are Ubuntu, Debian, etc..
+
 ![unix history tree](https://qph.fs.quoracdn.net/main-qimg-b2f5ed77ec03ade04f922cb32ea0ce6a)
 
 ### Unix-like system consists of
