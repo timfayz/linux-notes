@@ -13,6 +13,9 @@ Thomson shell -> PWB shell -> Borne shell (sh). Next see:
 
 ![shell history tree](https://www.ibm.com/developerworks/library/l-linux-shells/figure1.gif)
 
+* Notes. <br>
+`ksh, et al` takes best of `csh` and `bash`. `csh` is not recommended to use at all. `bash` is de-facto standard among Linux distributions. `zsh` is mainstream for "full-fledged" shell, the same with `fish` but it kinda more "underground". `mksh` is a default on Android. The performance is going as follows: `dash`, `mksh`, `zsh`, ... `bash`. Want to stay safe, minimal and authentic - go with `bash`. 
+
 ### How shell works
 ![shell boot process](https://www.ibm.com/developerworks/aix/library/au-getstartedbash/login2.gif)
 
