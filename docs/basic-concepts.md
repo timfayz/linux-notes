@@ -30,6 +30,10 @@ Then, BSD appeared to substitute all the legal restrictions. Designed under Berk
 
 Finally, Linux appeared to put all dots on i as separate project. It's a kernel *only*. Self-contained systems are *distributions* in this context which are Ubuntu, Debian, etc..
 
+POSIX appeared?
+* `POSIX` - defines set of fundamental abstractions and organization needed for efficient construction of apps which can interoperate between different "flavours" of Unix/Unix-like systems. Link.
+* `POSIX-compliant` - program or operating system that follows that standard.
+
 ![unix history tree](https://qph.fs.quoracdn.net/main-qimg-b2f5ed77ec03ade04f922cb32ea0ce6a)
 
 ### Unix-like system consists of
@@ -39,3 +43,9 @@ Finally, Linux appeared to put all dots on i as separate project. It's a kernel 
 * dev environment
 * commands
 * documentation
+
+## A little on Windows-world
+There is a history behind porting what people get used to in Unix to Windows world. 
+
+* MSYS + MinGW vs Cygwin
+* MSYS2 is everything above + `pacman` package manager
