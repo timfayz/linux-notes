@@ -44,7 +44,11 @@ POSIX appeared?
 * commands
 * documentation
 
-## A little on Windows-world
+### Man pages
+* `Man pages` - manual pages about the program
+    * `nroff -man mymanpage.1 | less` to read
+
+## A bit on Windows-world
 There is a history behind porting what people get used to in Unix to Windows world. 
 
 * MSYS + MinGW vs Cygwin
