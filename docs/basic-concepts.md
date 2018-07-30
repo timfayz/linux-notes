@@ -31,7 +31,7 @@ Then, BSD appeared to substitute all the legal restrictions. Designed under Berk
 Finally, Linux appeared to put all dots on i as separate project. It's a kernel *only*. Self-contained systems are *distributions* in this context which are Ubuntu, Debian, etc..
 
 POSIX appeared?
-* `POSIX` - defines set of fundamental abstractions and organization needed for efficient construction of apps which can interoperate between different "flavours" of Unix/Unix-like systems. Link.
+* `POSIX` - defines set of fundamental abstractions and organization needed for efficient construction of apps which can interoperate between different "flavours" of Unix/Unix-like systems. See https://stackoverflow.com/questions/1780599/i-never-really-understood-what-is-posix#31865755.
 * `POSIX-compliant` - program or operating system that follows that standard.
 
 ![unix history tree](https://qph.fs.quoracdn.net/main-qimg-b2f5ed77ec03ade04f922cb32ea0ce6a)
