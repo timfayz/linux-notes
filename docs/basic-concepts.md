@@ -3,10 +3,23 @@
 * `configuration` - you want your setup to persist in time on each boot.
 * `session` - you want several typical layouts to work with something.
 * `runtime`
+
+## System toolbox
+* `info` - what is it?
+* `man` - manual page database
+* `apropos name` - search for available man pages
+
 ### Shell
 * `interactive shell` - receive *user* commands, process it and gives the result.
 * `system shell` - used silently to run system scripts where interaction with the user may not the case.
 * `sh` - POSIX standard scripting language. Bash, zsh, dash, etc trying to suuport/comply to this standard. That simply means they can interpret .sh scripts.
+* `terminal capabilities` 
+    * list current capabilities `infocmp -c`
+    * `tput` reset/init and query current capabilities from terminfo database 
+* `termcap database` 
+    * readme `man terminfo`
+    * list available `find /usr/share/terminfo -type f`
+    * set (do not recommend) `export TERM = st-256colors`
 
 ### Shell history
 Thomson shell -> PWB shell -> Borne shell (sh). Next see:
