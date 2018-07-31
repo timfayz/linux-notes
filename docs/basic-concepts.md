@@ -13,6 +13,8 @@
 * `interactive shell` - receive *user* commands, process it and gives the result.
 * `system shell` - used silently to run system scripts where interaction with the user may not the case.
 * `sh` - POSIX standard scripting language. Bash, zsh, dash, etc trying to suuport/comply to this standard. That simply means they can interpret .sh scripts.
+* `in-band signaling` - shell uses inband signaling for both printing characters, change colors, move cursor, etc. The only shell make sense what to show and what to interpret as control signal.  
+* `escape characters` - ... See https://en.wikipedia.org/wiki/ANSI_escape_code
 * `terminal capabilities` 
     * list current capabilities `infocmp -c`
     * `tput` reset/init and query current capabilities from terminfo database 
