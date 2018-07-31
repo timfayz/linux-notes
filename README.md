@@ -10,8 +10,10 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
     * [Font rendering](docs/font-rendering.md)
     * [Keyboard handling](docs/keyboard-handling.md)
 * Write & Run "Hello world" (become a super hero programmer)
+* Communicate with outerworld
+    * What the most important protocols you need to know & use
 * Scripting
-...
+* ...
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
 * [Thoughts](docs/thoughts.md)
 * [FILES](docs/files.md)
