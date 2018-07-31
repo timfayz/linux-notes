@@ -1,4 +1,11 @@
-## Basic concepts
+## Legend
+* **definition** - some important term or concept
+* `command` - some important tool you need to know of
+* *~/.filename* - some file you may know of
+
+To use `command` just run it. To locate it `which command`. To read manual (if avaialbe) `man command`. To find possible related documents about either definition/`command` try `apropos X`.
+
+## Basics
 * `access` - in order to change something you an access.
 * `configuration` - you want your setup to persist in time on each boot.
 * `session` - you want several typical layouts to work with something.
@@ -8,6 +15,11 @@
 * `info` - what is it?
 * `man` - manual page database
 * `apropos name` - search for available man pages
+* *~/.inputrc* - used by GNU readline library for advanced command line editing using keybindings, cursor movements, history, etc. The library is used by many common CLI tools: bash, more, etc. 
+
+## Graphics/X11
+* *~/.xinitrc*
+* *~/.Xresources*
 
 ### Shell
 * `interactive shell` - receive *user* commands, process it and gives the result.
