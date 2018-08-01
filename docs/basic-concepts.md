@@ -29,11 +29,16 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `escape characters` - ... See https://en.wikipedia.org/wiki/ANSI_escape_code
 * `terminal capabilities` 
     * list current capabilities `infocmp -c`
-    * `tput` reset/init and query current capabilities from terminfo database 
 * `termcap database` 
     * readme `man terminfo`
     * list available `find /usr/share/terminfo -type f`
     * set (do not recommend) `export TERM = st-256colors`
+* `fc` (fix command) - list/edit last typed command using `$VISUAL`/`$EDITOR`
+* `tty` - print current TTY you attached to
+* `stty -a` - look at the TTY device attached and show settings refer to UART parameters, some affect the line discipline and some are for job control all mixed up together
+* `stty -F /dev/tty2 rows 5` - set terminal height to 5 lines
+* `tput` - query capabilities of current terminal `$TERM` or reset/init it or query capabilities from terminfo database
+* `shopt` - a shell builtin command to set and unset (remove) various Bash shell options 
 
 ### Shell history
 Thomson shell -> PWB shell -> Borne shell (sh). Next see:
