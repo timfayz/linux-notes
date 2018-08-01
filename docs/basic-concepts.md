@@ -39,7 +39,7 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `stty -F /dev/tty2 rows 5` - set terminal height to 5 lines
 * `tput` - query capabilities of current terminal `$TERM` or reset/init it or query capabilities from terminfo database
 * `shopt` - a shell builtin command to set and unset (remove) various Bash shell options 
-* shell colors - ... See https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences#33206814. Good brief on "Basic Color Terms: Their Universality and Evolution".
+* shell colors - ... Good brief on "Basic Color Terms: Their Universality and Evolution": https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences#33206814. Good excerpt on Color partitioning (or how 256 posible terminal colors are formed and partitioned into groups): https://stackoverflow.com/questions/27159322/rgb-values-of-the-colors-in-the-ansi-extended-colors-index-17-255
 
 ### Shell history
 Thomson shell -> PWB shell -> Borne shell (sh). Next see:
