@@ -1,4 +1,5 @@
 # ASCII Schematics
+Possible names: `bit legend`. The shematics _must_ be suitable for both: high level description and low level as well.
 
 ### Structure
 ```
@@ -24,21 +25,23 @@
 ```
 
 ### Relations
+Thoughts
+* `--name--` or `-[name]-`?
 
 B/w two modules "in place"
 ```
 |module1|
--[name]-    in both directions b/w 1 & 2
+--name--    in both directions b/w 1 & 2
 |module2|
 
 
 |module1|
--[name]->   to 2 only
+--name->   to 2 only
 |module2|
 
 
 |module1|
-<-[name]-   to 1 only
+<-name--   to 1 only
 |module2|
 ```
 
@@ -48,14 +51,14 @@ B/w "referencing" modules
 ...
 |module10|
 ...
-|moduleX|-10 
-         -1
+|moduleX|--10 
+         --1
 or
-|moduleX|-10 |-1  moduleX related to 1 & 10
+|moduleX|--10 |--1  moduleX related to 1 & 10
 ```
 
 ### WIP
 ```
-0,1>|ID:module|>2,3
-   in          out
+0,1->|ID:module|->2,3
+   in           out
 ```
