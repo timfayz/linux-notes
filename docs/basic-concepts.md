@@ -81,6 +81,10 @@ POSIX appeared?
 * `Man pages` - manual pages about the program
     * `nroff -man mymanpage.1 | less` to read
 
+## Networking
+Communication with other system is separate part of any system (including human; remember hands, tongue?).
+* `protocol` - the most important part is protocols: connectionless/connection-oriented (3-way handshake)
+
 ## A bit on Windows-world
 There is a history behind porting what people get used to in Unix to Windows world. 
 
