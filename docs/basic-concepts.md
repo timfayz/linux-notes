@@ -89,7 +89,7 @@ Communication with other system is separate part of any system (including human;
 *  **iw** package (`iw`) replaces/supress **wireless-tools** (`iwconfig`, `iwlist`, `iwspy`, etc) for _wireless_ interfaces.
 * Nowdays, use `ip`, `iw`, `ss` etc VS `ifconfig`, `iwconfig`, `netstat` etc accordingly. See: https://dougvitale.wordpress.com/2011/12/21/deprecated-linux-networking-commands-and-their-replacements/
 * `ip`, `iw` and alike are low-level tools to manipulate interfaces without saving changes. Most Linux based distributions use `/etc/network/interfaces` to save changes persistently and checked by `ifup` during the boot. This file is like an aggregator for invoking other net tools where each one is responsible for particular interface/option.
-* Wcid и NM выступают что-то в стиле более "фронт-ендевской" настройки сети и не учавствуют, когда ты задействешь интерфейс в /etc/network/interfaces
+* **Wcid** and **NetworkManager** are more user-friendly "front ends" for networking in "all-in-one" manner (for both wire and wireless). However, they may also depend on other packages listed above which considered more "low-level" like. If you affect an interface within `/etc/network/interfaces` they stop managing that interfaces in order not to interfere with other tools (let's say, manual mode).
 
 ## A bit on Windows-world
 There is a history behind porting what people get used to in Unix to Windows world. 
