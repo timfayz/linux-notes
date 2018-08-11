@@ -15,7 +15,8 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `info` - what is it?
 * `man` - manual page database
 * `apropos name` - search for available man pages
-* `~/.inputrc` - used by GNU readline library for advanced command line editing using keybindings, cursor movements, history, etc. The library is used by many common CLI tools: bash, more, etc. 
+* `~/.inputrc` - used by GNU readline library for advanced command line editing using keybindings, cursor movements, history, etc. The library is used by many common CLI tools: bash, more, etc.
+* `watch` - run program repeatedly
 
 ## Graphics/X11
 * `~/.xinitrc`
@@ -84,6 +85,11 @@ POSIX appeared?
 ## Networking
 Communication with other system is separate part of any system (including human; remember hands, tongue?).
 * `protocol` - the most important part is protocols: connectionless/connection-oriented (3-way handshake)
+* **iproute2** package (`ip`, `ss`, `tc`, etc) replaces/supress **net-tools** (`ifconfig`, `arp`, `routes`, `netstat`, `iptunnel`, etc) for _wire_ interfaces.
+*  **iw** package (`iw`) replaces/supress **wireless-tools** (`iwconfig`, `iwlist`, `iwspy`, etc) for _wireless_ interfaces.
+* Nowdays, use `ip`, `iw`, `ss` etc VS `ifconfig`, `iwconfig`, `netstat` etc accordingly. See: https://dougvitale.wordpress.com/2011/12/21/deprecated-linux-networking-commands-and-their-replacements/
+* `ip`, `iw` and alike are low-level tools to manipulate interfaces without saving changes. Most Linux based distributions use `/etc/network/interfaces` to save changes persistently and checked by `ifup` during the boot. This file is like an aggregator for invoking other net tools where each one is responsible for particular interface/option.
+* Wcid и NM выступают что-то в стиле более "фронт-ендевской" настройки сети и не учавствуют, когда ты задействешь интерфейс в /etc/network/interfaces
 
 ## A bit on Windows-world
 There is a history behind porting what people get used to in Unix to Windows world. 
