@@ -26,11 +26,11 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `interactive shell` - receive *user* commands, process it and gives the result.
 * `system shell` - used silently to run system scripts where interaction with the user may not the case.
 * `sh` - POSIX standard scripting language. Bash, zsh, dash, etc trying to suuport/comply to this standard. That simply means they can interpret .sh scripts.
-* `in-band signaling` - shell uses inband signaling for both printing characters, change colors, move cursor, etc. The only shell make sense what to show and what to interpret as control signal.  
+* `in-band signaling` - shell uses inband signaling for both printing characters, change colors, move cursor, etc. The only shell make sense what to show and what to interpret as control signal.
 * `escape characters` - ... See https://en.wikipedia.org/wiki/ANSI_escape_code
-* `terminal capabilities` 
+* `terminal capabilities`
     * list current capabilities `infocmp -c`
-* `termcap database` 
+* `termcap database`
     * readme `man terminfo`
     * list available `find /usr/share/terminfo -type f`
     * set (do not recommend) `export TERM = st-256colors`
@@ -39,7 +39,7 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `stty -a` - look at the TTY device attached and show settings refer to UART parameters, some affect the line discipline and some are for job control all mixed up together
 * `stty -F /dev/tty2 rows 5` - set terminal height to 5 lines
 * `tput` - query capabilities of current terminal `$TERM` or reset/init it or query capabilities from terminfo database
-* `shopt` - a shell builtin command to set and unset (remove) various Bash shell options 
+* `shopt` - a shell builtin command to set and unset (remove) various Bash shell options
 * shell colors - ... Good brief on "Basic Color Terms: Their Universality and Evolution": https://stackoverflow.com/questions/4842424/list-of-ansi-color-escape-sequences#33206814. Good excerpt on Color partitioning (or how 256 posible terminal colors are formed and partitioned into groups): https://stackoverflow.com/questions/27159322/rgb-values-of-the-colors-in-the-ansi-extended-colors-index-17-255
 
 ### Shell history
@@ -48,9 +48,10 @@ Thomson shell -> PWB shell -> Borne shell (sh). Next see:
 ![shell history tree](https://www.ibm.com/developerworks/library/l-linux-shells/figure1.gif)
 
 * Notes. <br>
-`ksh, et al` takes best of `csh` and `bash`. `csh` is not recommended to use at all. `bash` is de-facto standard among Linux distributions. `zsh` is mainstream for "full-fledged" shell, the same with `fish` but it kinda more "underground". `mksh` is a default on Android. The performance is going as follows: `dash`, `mksh`, `zsh`, ... `bash`. Want to stay safe, minimal and authentic - go with `bash`. 
+`ksh, et al` takes best of `csh` and `bash`. `csh` is not recommended to use at all. `bash` is de-facto standard among Linux distributions. `zsh` is mainstream for "full-fledged" shell, the same with `fish` but it kinda more "underground". `mksh` is a default on Android. The performance is going as follows: `dash`, `mksh`, `zsh`, ... `bash`. Want to stay safe, minimal and authentic - go with `bash`.
 
 ### How shell works
+* Good explanation on boot sequence and environment variables here: https://wiki.debian.org/EnvironmentVariables#Using_text_console
 ![shell boot process](https://www.ibm.com/developerworks/aix/library/au-getstartedbash/login2.gif)
 
 ### Unix history
@@ -58,7 +59,7 @@ Unix system created at AT&T Bell Labs. Written in C. It is "Self-contained" syst
 
 * `self-contained system` - system which has all the environment: compilers, debugers, documentations, etc.
 
-Then, BSD appeared to substitute all the legal restrictions. Designed under Berkley University. It also self-contained. It has many descendants: RHEL, FreeBSD, OpenBSD. They are not "Unix" systems but "Unix-like". To use word Unix you should pay a fees, etc to Open Group. 
+Then, BSD appeared to substitute all the legal restrictions. Designed under Berkley University. It also self-contained. It has many descendants: RHEL, FreeBSD, OpenBSD. They are not "Unix" systems but "Unix-like". To use word Unix you should pay a fees, etc to Open Group.
 
 * `unix-like system` - definition
 
@@ -92,7 +93,7 @@ Communication with other system is separate part of any system (including human;
 * **Wcid** and **NetworkManager** are more user-friendly "front ends" for networking in "all-in-one" manner (for both wire and wireless). However, they may also depend on other packages listed above which considered more "low-level" like. If you affect an interface within `/etc/network/interfaces` they stop managing that interfaces in order not to interfere with other tools (let's say, manual mode).
 
 ## A bit on Windows-world
-There is a history behind porting what people get used to in Unix to Windows world. 
+There is a history behind porting what people get used to in Unix to Windows world.
 
 * MSYS + MinGW vs Cygwin
 * MSYS2 is everything above + `pacman` package manager
