@@ -17,6 +17,7 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `apropos name` - search for available man pages
 * `~/.inputrc` - used by GNU readline library for advanced command line editing using keybindings, cursor movements, history, etc. The library is used by many common CLI tools: bash, more, etc.
 * `watch` - run program repeatedly
+* `cron` - etc/cron.daily, @daily root command, https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
 ## Graphics/X11
 * `~/.xinitrc`
