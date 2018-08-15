@@ -23,7 +23,7 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `~/.xinitrc`
 * `~/.Xresources`
 
-### Shell
+## Shell
 * `interactive shell` - receive *user* commands, process it and gives the result.
 * `system shell` - used silently to run system scripts where interaction with the user may not the case.
 * `sh` - POSIX standard scripting language. Bash, zsh, dash, etc trying to suuport/comply to this standard. That simply means they can interpret .sh scripts.
@@ -55,7 +55,7 @@ Thomson shell -> PWB shell -> Borne shell (sh). Next see:
 * Good explanation on boot sequence and environment variables here: https://wiki.debian.org/EnvironmentVariables#Using_text_console
 ![shell boot process](https://www.ibm.com/developerworks/aix/library/au-getstartedbash/login2.gif)
 
-### Unix history
+## Unix history
 Unix system created at AT&T Bell Labs. Written in C. It is "Self-contained" system. Lincences were sold to commercial companies IBM (AIX), Apple (OS X), HP (HP-UX), etc. Now is under jurisdiction of (maintained by) The Open Group. It's still alive (Solaris).
 
 * `self-contained system` - system which has all the environment: compilers, debugers, documentations, etc.
@@ -72,15 +72,7 @@ POSIX appeared?
 
 ![unix history tree](https://qph.fs.quoracdn.net/main-qimg-b2f5ed77ec03ade04f922cb32ea0ce6a)
 
-### Unix-like system consists of
-* kernel
-* shell
-* fs
-* dev environment
-* commands
-* documentation
-
-### Man pages
+## Man pages
 * `Man pages` - manual pages about the program
     * `nroff -man mymanpage.1 | less` to read
 
@@ -94,11 +86,19 @@ Communication with other system is separate part of any system (including human;
 * **Wcid** and **NetworkManager** are more user-friendly "front ends" for networking in "all-in-one" manner (for both wire and wireless). However, they may also depend on other packages listed above which considered more "low-level" like. If you affect an interface within `/etc/network/interfaces` they stop managing that interfaces in order not to interfere with other tools (let's say, manual mode).
 - `ss -lntp` - show listening ports
 
-# Service Management
+## Service Management
 - `service name comand`, `/etc/init.d/name comand`, `systemctl name comand` - the last one is what you supposed to use (systemd), everything else is deprecated and keeped to support System V-like service managment
 - `sv name comand` - runit-way of managing services
 
-# Device Tree
+## Unix-like system structure
+* kernel
+* shell
+* fs
+* dev environment
+* commands
+* documentation
+
+## Device Tree
 What is it?
 - FEX (Allwinner) -> Device Tree -> DT overlay (current way of decribing hardware). r1 = ATAGs is depreceted, r2 = Machine ID is deprecated, r3 = DT blob is current standard to run Linux. 
 - `dtc` - device tree compiler
