@@ -17,6 +17,8 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `apropos name` - search for available man pages
 * `~/.inputrc` - used by GNU readline library for advanced command line editing using keybindings, cursor movements, history, etc. The library is used by many common CLI tools: bash, more, etc.
 * `watch` - run program repeatedly
+
+## Tasks
 * `cron` - etc/cron.daily, @daily root command, https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
 
 ## Graphics/X11
@@ -85,6 +87,7 @@ Communication with other system is separate part of any system (including human;
 * `ip`, `iw` and alike are low-level tools to manipulate interfaces without saving changes. Most Linux based distributions use `/etc/network/interfaces` to save changes persistently and checked by `ifup` during the boot. This file is like an aggregator for invoking other net tools where each one is responsible for particular interface/option.
 * **Wcid** and **NetworkManager** are more user-friendly "front ends" for networking in "all-in-one" manner (for both wire and wireless). However, they may also depend on other packages listed above which considered more "low-level" like. If you affect an interface within `/etc/network/interfaces` they stop managing that interfaces in order not to interfere with other tools (let's say, manual mode).
 - `ss -lntp` - show listening ports
+
 
 ## Service Management
 - `service name comand`, `/etc/init.d/name comand`, `systemctl name comand` - the last one is what you supposed to use (systemd), everything else is deprecated and keeped to support System V-like service managment
