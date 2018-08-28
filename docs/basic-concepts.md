@@ -93,6 +93,15 @@ Communication with other system is separate part of any system (including human;
 - `service name comand`, `/etc/init.d/name comand`, `systemctl name comand` - the last one is what you supposed to use (systemd), everything else is deprecated and keeped to support System V-like service managment
 - `sv name comand` - runit-way of managing services
 
+## Webdev environment
+* install Node.js (npm)
+* postcss-cli & autoprefixer
+* csstoday?
+* sass
+* vscode, colorpicker, emmet
+* caniuse, etc
+* grid
+
 ## Unix-like system structure
 * kernel
 * shell
