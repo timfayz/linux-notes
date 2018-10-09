@@ -1,0 +1,6 @@
+- Windows: 6 years
+- Ubuntu: ~2 years
+- Arch Linux (i3 + urxvt): ~1 year
+- Alpine: ~1 month
+- Void Linux (dwm, st, tmux & other suckless.org stuff): ~1 year
+- Linux Mint (Cinnamon, tmux): from now on.
