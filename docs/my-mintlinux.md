@@ -1,27 +1,37 @@
-# Linux Mint (fresh install)
+# Linux Mint
 
 ## Prerequirements
 
 	apt upgrade
 
-* Toolbox
+## Install packages
+### Toolbox
 	* git
 	* dconf-editor
 	* xclip
 	* djview4
 	* build-essentials
 	* neovim:
+
 		# install Plug
 		curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-* Apps
+### Apps
 	* vscode (external):
 		sync settings from git
 	* telegram-desktop
 	* dropbox
 	* playonlinux
 	* vlc
+
+## Configure
+* Nemo ->
+	- View -> [] Show toolbar
+    - Prefs -> Views ->
+        * Icon View Defaults -> Zoom = 66%
+        * View new folders = List view
+    - org.nemo.desktop vertical-grid-adjust 0.8
 
 * System Settings ->
 	- Hot corners
@@ -55,10 +65,4 @@
 	- remove btrfs
 		sudo apt purge btrfs-progs btrfs-tools
 		sudo update-initramfs -ukall (optional)
-* Nemo ->
-	- View -> [] Show toolbar
-    - Prefs -> Views ->
-        * Icon View Defaults -> Zoom = 66%
-        * View new folders = List view
-    - org.nemo.desktop vertical-grid-adjust 0.8
 
