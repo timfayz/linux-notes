@@ -1,21 +1,20 @@
 # Linux Mint
 
-## Prerequirements
 
+
+## Packages
 	apt upgrade
 
-## Install packages
-### Toolbox
-	* git
-	* dconf-editor
-	* xclip
-	* djview4
-	* build-essentials
-	* neovim:
-
-		# install Plug
-		curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-			https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+### Tools
+* git
+* dconf-editor
+* xclip
+* djview4
+* build-essentials
+* neovim:
+    # install Plug
+    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ### Apps
 	* vscode (external):
@@ -25,7 +24,7 @@
 	* playonlinux
 	* vlc
 
-## Configure
+## Configuration
 * Nemo ->
 	- View -> [] Show toolbar
     - Prefs -> Views ->
