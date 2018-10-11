@@ -3,7 +3,9 @@
 
 
 ## Packages
-	apt upgrade
+```	
+apt upgrade
+```
 
 ### Tools
 * git
@@ -35,7 +37,6 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 
 * System Settings ->
 	- Hot corners
-	- Wifi (explain)
 	- Set compose key
 	- Add lang layouts & chache switch keys
 	- Disable second monitor
@@ -50,8 +51,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 	- Appearance: change theme to Mint-Y
 	- Change start menu icon & change firefox icon
 	- Smash startup apps
-	- Go through Optimize SSD (https://sites.google.com/site/easylinuxtipsproject/ssd)
-	- Go through Speedup Mint (https://sites.google.com/site/easylinuxtipsproject/3)
+	
+* Optimize SSD (https://sites.google.com/site/easylinuxtipsproject/ssd)
+* Speedup Mint (https://sites.google.com/site/easylinuxtipsproject/3)
 ```
 #  General
 Disable compositing for full-screen windows: ON
@@ -64,9 +66,11 @@ systemctl status tmp.mount
 # /etc/initramfs-tools/conf.d/resume
 RESUME=NONE or comment it
 ```
-	- remove btrfs
+* Remove btrfs
 ```
 sudo apt purge btrfs-progs btrfs-tools
 sudo update-initramfs -ukall (optional)
 ```
-
+* Change Wi-Fi driver
+```
+```
