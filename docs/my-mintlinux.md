@@ -13,9 +13,9 @@
 * build-essentials
 * neovim:
 
-    # install Plug
-    curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+	# install Plug
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+	    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 ### Apps
 * vscode (external): sync settings from git
