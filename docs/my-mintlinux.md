@@ -86,3 +86,8 @@ options b43 allhwsupport=1
 
 sudo apt-get install firmware-b43-installer
 ```
+* Speedup password promt fail
+```
+vim /etc/pam.d/login
+pam_faildelay.so delay=
+```
