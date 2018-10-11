@@ -53,6 +53,13 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 	- Smash startup apps
 	
 * Optimize SSD (https://sites.google.com/site/easylinuxtipsproject/ssd)
+	- leave 20% space at the end of drive (and each partition!) for overprovisioning (and fragmentation avoid!) 
+	- limit swappiness to 1
+	- limit Firefox write overhead
+	- set `fstrim` to once a day
+	- set scheduler to `deadline`
+```
+```
 * Speedup Mint (https://sites.google.com/site/easylinuxtipsproject/3)
 ```
 #  General
@@ -73,4 +80,9 @@ sudo update-initramfs -ukall (optional)
 ```
 * Change Wi-Fi driver
 ```
+vim /etc/modprobe.d/local-b43.conf
+# Activate experimental support for some hardware revisions
+options b43 allhwsupport=1
+
+sudo apt-get install firmware-b43-installer
 ```
