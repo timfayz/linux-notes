@@ -3,7 +3,7 @@
 
 
 ## Packages
-```	
+```
 apt upgrade
 ```
 
@@ -18,6 +18,10 @@ apt upgrade
 # install Plug
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+* python:
+```
+apt install python-pip (python3-pip)
 ```
 
 ### Apps
@@ -51,9 +55,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 	- Appearance: change theme to Mint-Y
 	- Change start menu icon & change firefox icon
 	- Smash startup apps
-	
+
 * Optimize SSD (https://sites.google.com/site/easylinuxtipsproject/ssd)
-	- leave 20% space at the end of drive (and each partition!) for overprovisioning (and fragmentation avoid!) 
+	- leave 20% space at the end of drive (and each partition!) for overprovisioning (and fragmentation avoid!)
 	- limit swappiness to 1
 	- limit Firefox write overhead
 	- set `fstrim` to once a day
@@ -89,5 +93,5 @@ sudo apt-get install firmware-b43-installer
 * Speedup password promt fail
 ```
 vim /etc/pam.d/login
-pam_faildelay.so delay=
+pam_faildelay.so delay=...
 ```
