@@ -26,7 +26,9 @@ apt install python3-pip python3-setuptools python3-wheel
 ```
 
 ### Apps
-* vscode (external): sync settings from git
+* vscode (external):
+   - Sync `settings.json` from git
+   - Set python path to `python3`
 * telegram-desktop
 * dropbox
 * playonlinux
