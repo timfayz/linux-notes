@@ -10,7 +10,7 @@ apt upgrade
 ### Tools
 * git
 * dconf-editor
-* xclip
+* xclip (for tmux clipboard)
 * djview4
 * build-essentials
 * neovim:
@@ -21,7 +21,8 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 ```
 * python:
 ```
-apt install python-pip (python3-pip)
+apt install python-pip python-setuptools python-whee
+apt install python3-pip python3-setuptools python3-wheel
 ```
 
 ### Apps
