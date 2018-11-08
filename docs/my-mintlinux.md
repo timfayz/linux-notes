@@ -1,6 +1,4 @@
-# Linux Mint
-
-
+# Linux Mint Setup
 
 ## Packages
 ```
@@ -24,6 +22,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 apt install python-pip python-setuptools python-whee
 apt install python3-pip python3-setuptools python3-wheel
 ```
+* clang-format (for vscode formatter)
 
 ### Apps
 * vscode (external):
