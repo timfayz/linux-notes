@@ -1,24 +1,23 @@
 # Linux Notes
-This is how I become aweare of what's going on in the Linux. This is kinda of framework to ask questions about the Linux *properly*.
+This is how I become aweare of what *is* Linux. 
 
 ### Table Of Content
-* [Bootstrapping](https://github.com/timfayz/simply-linux) (get hands dirty)
+* [Get Linux](https://github.com/timfayz/authentic-linux) (get hands dirty)
 * [Boot Process](docs/pc-boot.md) (understanding how your PC/ARM is booting up)
+* [Linux conventions](docs/linux-conventions.md)
 * Linux Internals (organization & management)
     * [Basic concepts](docs/basic-concepts.md)
     * [Characters and encodings](docs/charset-encoding.md)
     * [Font rendering](docs/font-rendering.md)
     * [Keyboard handling](docs/keyboard-handling.md)
-* Write & Run "Hello world" (become a super hero programmer)
-* Communicate with outerworld
-    * What the most important protocols you need to know & use
+* Write & Run "Hello world"
 * Scripting
-* ...
+* Communicate with outerworld (TCP/IP)
 * [Built your own Linux](http://www.linuxfromscratch.org/blfs/)
 * [Thoughts](docs/thoughts.md)
-* [FILES](docs/files.md)
+* [Important files](docs/files.md)
 
-### Definition of being able to manage
+### Definition of manage
 **manage** Linux program means _know how to_:
 * show its location
 * show its permissions, user, group
@@ -31,13 +30,10 @@ This is how I become aweare of what's going on in the Linux. This is kinda of fr
 * list systemcalls it calls
 * measure performance (profiling) 
 * show the platform it was compiled against
-* use it (flags & options) under CLI
+* know its CLI interface (flags & envs)
 * show how much memory and CPU it utilize
 * find it man page, docs, reference, etc
 
 ## Unsroted
 * [Toolbox](docs/toolbox.md)
-* [Template](docs/template.md)
-* [Linux conventions](docs/linux-conventions.md)
 * [Schematics format](docs/schematics.md)
-* What every programmer should know about symbols displayed on screen
