@@ -10,4 +10,3 @@ Summaries on challenging topics in Linux system administration.
 * [Unix conventions](docs/conventions.md)
 * [Toolbox](docs/toolbox.md)
 * [System files](docs/files.md)
-* [Thoughts](docs/thoughts.md)

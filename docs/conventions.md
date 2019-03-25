@@ -1,4 +1,4 @@
-# Linux/Unix conventions
+# Unix conventions
 
 ```
 $ - ordinary user
