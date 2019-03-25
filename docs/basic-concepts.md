@@ -1,3 +1,5 @@
+# Linux basics
+
 ## Legend
 * **definition** - some important term or concept
 * `command` - some important tool you need to know of
@@ -5,11 +7,13 @@
 
 To use `command` just run it. To locate it `which command`. To read manual (if avaialbe) `man command`. To find possible related documents about either definition/`command` try `apropos X`.
 
-## Basics
-* `access` - in order to change something you an access.
-* `configuration` - you want your setup to persist in time on each boot.
-* `session` - you want several typical layouts to work with something.
-* `runtime`
+
+
+## Definitions
+* `config file` - if you want your setup to persist on each boot
+* `session` - if you want several typical layouts for quick switch and handful interaction.
+
+
 
 ## System toolbox
 * `info` - what is it?
@@ -18,12 +22,18 @@ To use `command` just run it. To locate it `which command`. To read manual (if a
 * `~/.inputrc` - used by GNU readline library for advanced command line editing using keybindings, cursor movements, history, etc. The library is used by many common CLI tools: bash, more, etc.
 * `watch` - run program repeatedly
 
+
+
 ## Tasks
 * `cron` - etc/cron.daily, @daily root command, https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
+
+
 
 ## Graphics/X11
 * `~/.xinitrc`
 * `~/.Xresources`
+
+
 
 ## Shell
 * `interactive shell` - receive *user* commands, process it and gives the result.
@@ -57,6 +67,8 @@ Thomson shell -> PWB shell -> Borne shell (sh). Next see:
 * Good explanation on boot sequence and environment variables here: https://wiki.debian.org/EnvironmentVariables#Using_text_console
 ![shell boot process](https://www.ibm.com/developerworks/aix/library/au-getstartedbash/login2.gif)
 
+
+
 ## Unix history
 Unix system created at AT&T Bell Labs. Written in C. It is "Self-contained" system. Lincences were sold to commercial companies IBM (AIX), Apple (OS X), HP (HP-UX), etc. Now is under jurisdiction of (maintained by) The Open Group. It's still alive (Solaris).
 
@@ -74,9 +86,13 @@ POSIX appeared?
 
 ![unix history tree](https://qph.fs.quoracdn.net/main-qimg-b2f5ed77ec03ade04f922cb32ea0ce6a)
 
+
+
 ## Man pages
 * `Man pages` - manual pages about the program
     * `nroff -man mymanpage.1 | less` to read
+
+
 
 ## Networking
 Communication with other system is separate part of any system (including human; remember hands, tongue?).
@@ -89,35 +105,25 @@ Communication with other system is separate part of any system (including human;
 - `ss -lntp` - show listening ports
 
 
+
 ## Service Management
 - `service name comand`, `/etc/init.d/name comand`, `systemctl name comand` - the last one is what you supposed to use (systemd), everything else is deprecated and keeped to support System V-like service managment
 - `sv name comand` - runit-way of managing services
 
-## Webdev environment
-* install Node.js (npm)
-* postcss-cli & autoprefixer
-* csstoday?
-* sass
-* vscode, colorpicker, emmet
-* caniuse, etc
-* grid
 
-## Unix-like system structure
-* kernel
-* shell
-* fs
-* dev environment
-* commands
-* documentation
+
+## Typical parts of Unix-like OS
+* Kernel
+* Shell
+* FS
+* Development environment
+* Commands
+* Documentation
+
+
 
 ## Device Tree
 What is it?
 - FEX (Allwinner) -> Device Tree -> DT overlay (current way of decribing hardware). r1 = ATAGs is depreceted, r2 = Machine ID is deprecated, r3 = DT blob is current standard to run Linux. 
 - `dtc` - device tree compiler
 - `.dts`, `.dtb`, `.dti` - device tree source, blob, include file
-
-## A bit on Windows-world
-There is a history behind porting what people get used to in Unix to Windows world.
-
-* MSYS + MinGW vs Cygwin
-* MSYS2 is everything above + `pacman` package manager

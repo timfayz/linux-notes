@@ -1,4 +1,5 @@
-## Fonts and rendering
+# Fonts and rendering
+
 * https://en.wikibooks.org/wiki/Guide_to_X11/Fonts
 
 ```

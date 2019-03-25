@@ -1,9 +1,9 @@
-## Keyboard handling
+# Keyboard handling
 Roughly speaking, the picture is this: the keyboard produces scancodes, the scancodes are assembled into keycodes (one unique code for each key), and keycodes are converted to tty input characters using the kernel keymaps. After that, the normal `stty` processing takes place, just as for any other terminal.
 
 The mapping uses two levels of indirection, from keycode+modifier combination (with three modifiers: shift, control, alt) to keysym and from keysym to string (character or escape sequence). The set of keysyms is fixed, so if you want to define custom combinations you'll need to use existing keysyms that aren't otherwise used such as F13, F14, …
 
-### X Window System
+## X Window System
 The X server reads input events through a device file, for example `/dev/input/eventNN`
 
 In practice, you'll want to configure fonts in two ways:
@@ -56,12 +56,12 @@ EDIT: The following statements are part of my own research again, not in IRC.
 
 Also, Xft and Freetype2 are not strictly the same. Xft uses Freetype2 to provide text rendering for X11 (as does cairo), while Freetype2 is agnostic of any graphical environment (well, that one is kind of obvious in hindsight, if you look at the package dependencies).
 
-#### Programs
+## Programs
 * `Xft, freetype2, fontcofig`
 * `xset q` shows current X11 properties
 * `mkfontdir` generates font index storing aliases into `font.alias` (bitmap) and `font.scale` (vector)
 
-#### Files
+## Files
 * `/usr/share/fonts/*/fonts.{alias,scale}`
 
 ### Linux Console
@@ -71,15 +71,15 @@ As for the Linux console, it has its own keyboard layouts which are stored in /u
 
 In Linux, several devices can be used as system console: a virtual terminal, serial port, USB serial port, VGA in text-mode, framebuffer.
 
-#### Programs
+## Programs
 * `setfont`
 * `showconsolefont`
-#### Files
+## Files
 `/usr/share/kbd/consolefonts` is the default font directory.
 `/usr/share/kbd/unimaps` is the default directory for Unicode maps.
 `/usr/share/kbd/consoletrans` is the default directory for screen mappings.  The default font is a file `default*.psfu.gz`
 
-#### References
+## References
 * [1] https://unix.stackexchange.com/questions/116629/how-do-keyboard-input-and-text-output-work/116630#116630
 * [2] https://unix.stackexchange.com/questions/12510/relationship-of-keyboard-layout-and-xmodmap/12518#12518
 * [1] (MOVE TO FONT SECTION) https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
@@ -89,11 +89,11 @@ In Linux, several devices can be used as system console: a virtual terminal, ser
 * https://unix.stackexchange.com/questions/111454/what-are-the-purposes-of-the-different-types-of-xwindows-fonts/111576#111576
 * http://behdad.org/text/
 
-#### Tools (runtime management)
+## Tools (runtime management)
 * `setkeycodes`
 * `loadkeys`
 * `showconsolefont`
 * `showkey`
 
-#### Files (persistent configuration)
+## Files (persistent configuration)
 * `/dev/input/event*`

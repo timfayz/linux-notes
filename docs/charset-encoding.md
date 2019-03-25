@@ -1,4 +1,5 @@
-## Characters and Encoding
+# Characters and Encoding
+
 * `Character` - is the smallest *element of meaning*. It can be letter, spacing character, symbol or even a word. 
 Examples: A B | + $ etc.
 
@@ -20,12 +21,9 @@ Examples: Unicode (UCS), language alphabets, greek numbers, etc.
 First 0-65536(0xFFFF) code points of Unicode are "basic multilingual plane" (BMP), all other are "supplementary characters"
 ```
 
-References:
+### References
+
 1. https://blogs.msdn.microsoft.com/shawnste/2005/03/15/whats-the-difference-between-an-encoding-code-page-character-set-and-unicode/
-1. https://en.wikipedia.org/wiki/Character_encoding#Terminology
-1. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
+2. https://en.wikipedia.org/wiki/Character_encoding#Terminology
+3. https://stackoverflow.com/questions/3441490/whats-the-difference-between-an-encoding-a-character-set-and-a-code-page
 
-#### Programs
-* `iconv`
-
-#### Files
