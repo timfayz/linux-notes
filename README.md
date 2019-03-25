@@ -9,4 +9,5 @@ Summaries on challenging topics in Linux system administration.
 * [Keyboard handling](docs/keyboard-handling.md)
 * [Unix conventions](docs/conventions.md)
 * [Toolbox](docs/toolbox.md)
+* [Setup Linux Mint](docs/mint.md)
 * [System files](docs/files.md)
